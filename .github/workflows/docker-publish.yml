@@ -33,6 +33,6 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: kekzvpn2/kekzvpn:latest
+          tags: kekzvpn/kekzvpn:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
