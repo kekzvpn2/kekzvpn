@@ -3,10 +3,7 @@
     "loglevel": "none"
   },
   "dns": {
-    "servers": [
-      "223.5.5.5",
-      "223.6.6.6"
-    ],
+    "servers": ["223.5.5.5", "223.6.6.6"],
     "strategy": "UseIPv4",
     "disableCache": false,
     "disableFallback": false
@@ -27,7 +24,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "\/kekz-vpn"
+          "path": "/kekz-vpn"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -53,7 +50,7 @@
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "\/kekz-vpn"
+          "path": "/vlss-kekz"
         },
         "sockopt": {
           "tcpFastOpen": true,
@@ -86,12 +83,7 @@
     "rules": [
       {
         "type": "field",
-        "inboundTag": [
-          "trojan-ws",
-          "vless-ws"
-        ],
+        "inboundTag": ["trojan-ws", "vless-ws"],
         "outboundTag": "direct"
       }
-    ]
-  }
-}
+      
